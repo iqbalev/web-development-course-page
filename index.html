@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap"
       rel="stylesheet"
     />
     <!-- Font -->
@@ -17,50 +17,60 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>Logo</h1>
-      <nav id="navigation-menu">
+    <header class="header-container">
+      <div class="logo"><h1>lab.qi</h1></div>
+      <nav class="navigation-list">
         <ul>
-          <li><a href="#">Beranda</a></li>
-          <li><a href="#">Testimonial</a></li>
-          <li><a href="#">Daftar</a></li>
+          <li><a href="#">Halaman Utama</a></li>
+          <li><a href="#daftar">Daftar</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <div id="content">
-        <article id="article-main-content">
-          <h4>More than a wallet</h4>
-          <h1>Make Paying <br />Easier with <br />E-Wallet.</h1>
+    <main class="main-container">
+      <div class="content-1">
+        <article class="description-1">
+          <h1>Wujudkan mimpimu untuk <br />menjadi Website Developer</h1>
+          <h4>Belajar gratis dibimbing langsung oleh mentor profesional!</h4>
         </article>
 
-        <article id="article-sub-content">
-          <div class="article-sub-content-container">
+        <article class="description-2">
+          <div class="bullet-point">
             <i>HTML</i>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Lorem ipsum dolor sit.</p>
           </div>
-
-          <div class="article-sub-content-container">
+          <div class="bullet-point">
             <i>CSS</i>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Lorem ipsum dolor sit.</p>
           </div>
-
-          <div class="article-sub-content-container">
+          <div class="bullet-point">
             <i>JavaScript</i>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Lorem ipsum dolor sit.</p>
           </div>
         </article>
       </div>
 
-      <aside>
-        <div id="aside-image">
-          <img src="assets/images/3426526.jpg" alt="" />
-        </div>
+      <aside class="content-2">
+        <section class="image">
+          <img src="assets/images/image.jpg" alt="image" />
+        </section>
+
+        <section class="registration">
+          <form class="form" action="#" autocomplete="off" autofill="off">
+            <h2 id="daftar">Daftarkan dirimu sekarang juga!</h2>
+            <input type="email" name="" placeholder="E-mail" /><br />
+            <input type="password" name="" placeholder="Password" /><br />
+            <input
+              type="password"
+              name=""
+              placeholder="Konfirmasi password"
+            /><br />
+            <input class="submit" type="submit" value="Daftar" />
+          </form>
+        </section>
       </aside>
     </main>
 
-    <footer>Lorem ipsum dolor sit amet consectetur adipisicing elit.</footer>
-    <script src="script.js"></script>
+    <footer class="footer-container"></footer>
   </body>
 </html>

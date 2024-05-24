@@ -1,94 +1,116 @@
-* {
+/* Reset Styling - Start */
+/* * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
+  outline: 1px solid black;
+} */
+/* Reset Styling - End */
 
+/* General Styling - Start */
 body {
-  font-family: "Inconsolata", monospace;
-}
-
-/* header-start */
-header {
+  font-family: "Quicksand", sans-serif;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+}
+/* General Styling - End */
+
+/* Header Styling - Start */
+.header-container {
+  display: flex;
   align-items: center;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: rgb(220, 245, 233);
+  justify-content: space-around;
 }
 
-#navigation-menu > ul {
+.header-container > .navigation-list > ul {
   display: flex;
   gap: 50px;
 }
 
-#navigation-menu > ul > li {
+.header-container > .navigation-list > ul > li {
   list-style: none;
 }
 
-#navigation-menu > ul > li a {
-  font-weight: bold;
+.header-container > .navigation-list > ul > li > a {
   text-decoration: none;
   color: black;
 }
-/* header-end */
+/* Header Styling - End */
 
-/* main-start */
-main {
-  gap: 100px;
+/* Main Styling - Start */
+.main-container {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
+}
+
+.main-container > .content-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  background-color: rgb(220, 245, 233);
 }
 
-#content {
+.main-container > .content-1 > .description-1 {
   display: flex;
   flex-direction: column;
-  gap: 100px;
-  margin: 20px;
 }
 
-#article-main-content {
-  display: flex;
-  flex-direction: column;
+.main-container > .content-1 > .description-1 > h1,
+h4 {
   text-align: center;
 }
 
-#article-main-content > h1 {
-  font-size: 50px;
+.main-container > .content-1 > .description-2 {
+  display: flex;
+  gap: 50px;
 }
 
-#article-sub-content {
+.main-container > .content-1 > .description-2 > .bullet-point {
   display: flex;
-  gap: 15px;
-}
-
-.article-sub-content-container {
-  display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 10px;
-  border: 1px solid black;
-  border-radius: 60px;
-  background-color: white;
-  padding-left: 20px;
+  justify-content: center;
 }
 
-#aside-image > img {
-  border-top-right-radius: 120px;
-  border-bottom-right-radius: 120px;
-  border: 1px solid black;
-  border-left: none;
-  width: 500px;
-}
-/* main-end */
-
-/* footer-start */
-footer {
+.main-container > .content-1 > .description-2 > .bullet-point > i,
+p {
   text-align: center;
-  background-color: rgb(220, 245, 233);
 }
-/* footer-end */
+
+.main-container > .content-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container > .content-2 > .image > img {
+  width: 100%;
+}
+
+.main-container > .content-2 > .registration {
+  background-color: rgb(237, 237, 237);
+  border-top-left-radius: 220px;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 220px;
+  border-bottom-left-radius: 80px;
+  padding: 20px 20px;
+}
+
+.main-container > .content-2 > .registration > .form {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container > .content-2 > .registration > .form > input {
+  font-family: "Quicksand", sans-serif;
+  padding: 10px 5px;
+}
+
+.main-container > .content-2 > .registration > .form > .submit:hover {
+  cursor: pointer;
+}
+/* Main Styling - End */
+
+/* Media Queries - Start */
+
+/* Media Queries - End */
