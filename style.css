@@ -38,11 +38,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 80px;
+  gap: 50px;
   margin-top: 80px;
 }
 
-.main-container > .content-1 > .description-1 {
+.main-container > .content-1 > .description {
   display: flex;
   flex-direction: column;
   background-color: rgb(237, 237, 237);
@@ -51,39 +51,73 @@ body {
   border-bottom-right-radius: 30px;
 }
 
-.main-container > .content-1 > .description-1 > h1,
+.main-container > .content-1 > .description > h1,
 h4 {
   text-align: right;
 }
 
-.main-container > .content-1 > .description-1 > h1 > .text-webdev {
+.main-container > .content-1 > .description > h1 > .text-webdev {
   color: rgb(237, 237, 237);
   background-color: rgb(30, 101, 99);
   letter-spacing: 5px;
-  border-radius: 5px;
-  padding: 2px 9px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 1px 9px;
 }
 
-.main-container > .content-1 > .description-2 {
+.main-container > .content-1 > .course-options {
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 
-.main-container > .content-1 > .description-2 > .bullet-point {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.main-container > .content-1 > .course-options > .option .button-read-more {
+  border: none;
+  padding: 10px;
+  font-family: "Quicksand", sans-serif;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  font-weight: bold;
+}
+
+.main-container
+  > .content-1
+  > .course-options
+  > .option
+  .button-read-more:hover {
+  background-color: rgb(93, 116, 124);
+  color: white;
+}
+
+.main-container
+  > .content-1
+  > .course-options
+  > .option
+  .button-read-more:hover {
+  cursor: pointer;
 }
 
 .main-container > .content-2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  gap: 50px;
 }
 
 .main-container > .content-2 > .image > img {
   width: 100%;
+}
+
+.main-container > .content-2 > .benefit {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container > .content-2 > .benefit > .benefit-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .main-container > .content-2 > .registration {
@@ -106,6 +140,10 @@ h4 {
   border: none;
 }
 
+.main-container > .content-2 > .registration > .form > .submit {
+  font-weight: bold;
+}
+
 .main-container > .content-2 > .registration > .form > .submit:hover {
   cursor: pointer;
   background-color: rgb(93, 116, 124);
@@ -125,7 +163,7 @@ h4 {
 
 .footer-container > .social-media > .social-link > ul {
   display: flex;
-  gap: 20px;
+  gap: 15px;
 }
 
 .footer-container > .social-media > .social-link > ul > Li {
@@ -134,6 +172,42 @@ h4 {
 .footer-container > .social-media > .social-link > ul > Li > a {
   text-decoration: none;
   color: rgb(93, 116, 124);
+}
+
+.footer-container
+  > .social-media
+  > .social-link
+  > ul
+  > Li
+  > .link-facebook:hover {
+  color: rgb(59, 89, 152);
+}
+
+.footer-container
+  > .social-media
+  > .social-link
+  > ul
+  > Li
+  > .link-twitter:hover {
+  color: rgb(29, 161, 242);
+}
+
+.footer-container
+  > .social-media
+  > .social-link
+  > ul
+  > Li
+  > .link-linkedin:hover {
+  color: rgb(10, 102, 194);
+}
+
+.footer-container
+  > .social-media
+  > .social-link
+  > ul
+  > Li
+  > .link-youtube:hover {
+  color: rgb(204, 24, 30);
 }
 
 /* Media Queries */
