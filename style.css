@@ -1,25 +1,16 @@
-/* Reset Styling - Start */
-/* * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  outline: 1px solid black;
-} */
-/* Reset Styling - End */
-
-/* General Styling - Start */
+/* General Styling */
 body {
   font-family: "Quicksand", sans-serif;
   display: flex;
   flex-direction: column;
 }
-/* General Styling - End */
 
-/* Header Styling - Start */
+/* Header Styling */
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  border-bottom: 2px solid rgb(237, 237, 237);
 }
 
 .header-container > .navigation-list > ul {
@@ -35,46 +26,54 @@ body {
   text-decoration: none;
   color: black;
 }
-/* Header Styling - End */
 
-/* Main Styling - Start */
+/* Main Styling */
 .main-container {
   display: flex;
   flex-direction: column;
+  border-bottom: 2px solid rgb(237, 237, 237);
 }
 
 .main-container > .content-1 {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 80px;
+  margin-top: 80px;
 }
 
 .main-container > .content-1 > .description-1 {
   display: flex;
   flex-direction: column;
+  background-color: rgb(237, 237, 237);
+  padding: 20px 20px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 .main-container > .content-1 > .description-1 > h1,
 h4 {
-  text-align: center;
+  text-align: right;
+}
+
+.main-container > .content-1 > .description-1 > h1 > .text-webdev {
+  color: rgb(237, 237, 237);
+  background-color: rgb(30, 101, 99);
+  letter-spacing: 5px;
+  border-radius: 5px;
+  padding: 2px 9px;
 }
 
 .main-container > .content-1 > .description-2 {
   display: flex;
-  gap: 50px;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .main-container > .content-1 > .description-2 > .bullet-point {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-}
-
-.main-container > .content-1 > .description-2 > .bullet-point > i,
-p {
-  text-align: center;
 }
 
 .main-container > .content-2 {
@@ -89,11 +88,9 @@ p {
 
 .main-container > .content-2 > .registration {
   background-color: rgb(237, 237, 237);
-  border-top-left-radius: 220px;
-  border-top-right-radius: 80px;
-  border-bottom-right-radius: 220px;
-  border-bottom-left-radius: 80px;
   padding: 20px 20px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
 }
 
 .main-container > .content-2 > .registration > .form {
@@ -104,13 +101,39 @@ p {
 .main-container > .content-2 > .registration > .form > input {
   font-family: "Quicksand", sans-serif;
   padding: 10px 5px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border: none;
 }
 
 .main-container > .content-2 > .registration > .form > .submit:hover {
   cursor: pointer;
+  background-color: rgb(93, 116, 124);
+  color: white;
 }
-/* Main Styling - End */
 
-/* Media Queries - Start */
+/* Footer Styling */
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
-/* Media Queries - End */
+.footer-container > .social-media {
+  display: flex;
+}
+
+.footer-container > .social-media > .social-link > ul {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-container > .social-media > .social-link > ul > Li {
+  list-style: none;
+}
+.footer-container > .social-media > .social-link > ul > Li > a {
+  text-decoration: none;
+  color: rgb(93, 116, 124);
+}
+
+/* Media Queries */
