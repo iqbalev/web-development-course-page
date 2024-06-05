@@ -15,4 +15,18 @@ document.addEventListener("DOMContentLoaded", function () {
       navigationList.classList.remove("open");
     });
   });
+
+  // Menambahkan tombol "Ubah Tema"
+  const themeSwitcherButton = document.createElement("button");
+  themeSwitcherButton.classList.add("button-theme-switcher");
+
+  const themeSwitcherButtonText = document.createTextNode("Ubah Tema");
+
+  themeSwitcherButton.appendChild(themeSwitcherButtonText);
+  navigationListUL.appendChild(themeSwitcherButton);
+
+  // Membuat function switcher untuk tombol "Ubah Tema"
+  themeSwitcherButton.addEventListener("click", function () {
+    document.body.classList.toggle("dark-mode");
+  });
 });
