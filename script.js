@@ -16,17 +16,21 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Menambahkan tombol "Ubah Tema"
+  // Menambahkan tombol "Mode Gelap"
   const themeSwitcherButton = document.createElement("button");
   themeSwitcherButton.classList.add("button-theme-switcher");
+  themeSwitcherButton.innerText = "Mode Gelap: Mati";
 
-  const themeSwitcherButtonText = document.createTextNode("Ubah Tema");
-
-  themeSwitcherButton.appendChild(themeSwitcherButtonText);
   navigationListUL.appendChild(themeSwitcherButton);
 
-  // Membuat function switcher untuk tombol "Ubah Tema"
+  // Membuat event switcher untuk tombol "Mode Gelap"
   themeSwitcherButton.addEventListener("click", function () {
     document.body.classList.toggle("dark-mode");
+
+    themeSwitcherButton.innerText = document.body.classList.contains(
+      "dark-mode"
+    )
+      ? "Mode Gelap: Hidup"
+      : "Mode Gelap: Mati";
   });
 });

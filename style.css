@@ -28,6 +28,10 @@ body {
   letter-spacing: 5px;
 }
 
+.logo-text-right {
+  color: rgb(30, 101, 99);
+}
+
 ul {
   display: flex;
   align-items: center;
@@ -44,7 +48,7 @@ a {
 }
 
 a:hover {
-  font-weight: bold;
+  text-decoration: underline;
   transition: all 0.2s ease-in-out;
 }
 
@@ -58,7 +62,7 @@ a:hover {
 }
 
 .button-theme-switcher:hover {
-  font-weight: bold;
+  text-decoration: underline;
   transition: all 0.2s ease-in-out;
 }
 
