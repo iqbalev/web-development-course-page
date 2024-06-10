@@ -33,4 +33,30 @@ document.addEventListener("DOMContentLoaded", function () {
       ? "Mode Gelap: Hidup"
       : "Mode Gelap: Mati";
   });
+
+  // Membuat tombol "Kembali ke Atas"
+  const returnToTopButton = document.createElement("button");
+  returnToTopButton.classList.add("button-return-to-top");
+
+  const returnToTopButtonIcon = document.createElement("i");
+  returnToTopButtonIcon.classList.add("fas", "fa-caret-up");
+
+  returnToTopButton.appendChild(returnToTopButtonIcon);
+
+  document.body.appendChild(returnToTopButton);
+
+  // Memunculkan atau menghilangkan tombol "Kembali ke Atas"
+  function showOrHideReturnToTopButton() {
+    document.documentElement.scrollTop > 0
+      ? (returnToTopButton.style.display = "block")
+      : (returnToTopButton.style.display = "none");
+  }
+
+  window.addEventListener("scroll", showOrHideReturnToTopButton);
+
+  // Menggulirkan halaman ke paling atas ketika tombol "Kembali ke Atas" diklik
+  returnToTopButton.addEventListener("click", function () {
+    document.documentElement.scrollTop = 0;
+    showOrHideReturnToTopButton();
+  });
 });

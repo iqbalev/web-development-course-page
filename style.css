@@ -8,10 +8,28 @@
   color: rgb(0, 0, 0);
 }
 
-/* General Styling */
+/* Body Styling */
 body {
   font-family: "Dosis", sans-serif;
   letter-spacing: 0.5px;
+}
+
+.button-return-to-top {
+  display: block;
+  position: fixed;
+  bottom: 38px;
+  right: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  color: rgb(255, 255, 255);
+  background-color: rgb(30, 101, 99);
+}
+
+.button-return-to-top:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(237, 237, 237);
+  transition: all 0.2s ease-in-out;
 }
 
 /* Header Styling */
@@ -206,6 +224,7 @@ input {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin: 20px 0;
 }
 
 .social-media {
@@ -300,6 +319,12 @@ input {
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
+  /* Body Styling */
+  .button-return-to-top {
+    bottom: 58px;
+    right: 30px;
+  }
+
   /* Main Styling */
   .content-1 {
     display: flex;
@@ -333,6 +358,10 @@ input {
 }
 
 @media screen and (max-width: 425px) {
+  /* Body Styling */
+  .button-return-to-top {
+    bottom: 38px;
+  }
   /* Header Styling */
   .navigation-list {
     display: none;
