@@ -18,18 +18,14 @@ body {
   display: none;
   position: fixed;
   bottom: 38px;
-  right: 20px;
+  right: 0px;
   cursor: pointer;
   border: none;
-  border-radius: 50%;
+  padding: 8px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
   color: rgb(255, 255, 255);
   background-color: rgb(30, 101, 99);
-}
-
-.button-return-to-top:hover {
-  color: rgb(0, 0, 0);
-  background-color: rgb(237, 237, 237);
-  transition: all 0.2s ease-in-out;
 }
 
 /* Header Styling */
@@ -272,6 +268,11 @@ input {
   color: rgb(255, 255, 255);
 }
 
+.dark-mode .button-return-to-top {
+  color: rgb(44, 44, 44);
+  background-color: rgb(30, 101, 99);
+}
+
 .dark-mode .header-container {
   border-bottom: 2px solid rgb(54, 54, 54);
 }
@@ -322,7 +323,6 @@ input {
   /* Body Styling */
   .button-return-to-top {
     bottom: 58px;
-    right: 30px;
   }
 
   /* Main Styling */

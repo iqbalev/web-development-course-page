@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
   returnToTopButton.classList.add("button-return-to-top");
 
   const returnToTopButtonIcon = document.createElement("i");
-  returnToTopButtonIcon.classList.add("fas", "fa-caret-up");
+  returnToTopButtonIcon.classList.add("fas", "fa-angle-up", "fa-lg");
 
   returnToTopButton.appendChild(returnToTopButtonIcon);
 
