@@ -15,7 +15,7 @@ body {
 }
 
 .button-return-to-top {
-  display: block;
+  display: none;
   position: fixed;
   bottom: 38px;
   right: 20px;
@@ -362,6 +362,7 @@ input {
   .button-return-to-top {
     bottom: 38px;
   }
+
   /* Header Styling */
   .navigation-list {
     display: none;
@@ -377,7 +378,7 @@ input {
     width: 50%;
   }
 
-  .open {
+  .dropdown-menu {
     display: flex;
   }
 

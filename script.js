@@ -1,29 +1,31 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Memunculkan menu dropdown ketika hamburger-icon diklik
   const navigationList = document.querySelector(".navigation-list");
-  const navigationListUL = document.querySelector(".navigation-list ul");
-  const navigationLink = document.querySelectorAll(".navigation-list a");
   const toggleDropdown = document.getElementById("toggle-dropdown");
 
-  // Memunculkan menu dropdown ketika hamburger-icon diklik
   toggleDropdown.addEventListener("click", function () {
-    navigationList.classList.toggle("open");
+    navigationList.classList.toggle("dropdown-menu");
   });
 
   // Menghilangkan menu dropdown ketika salah satu list-nya diklik
+  const navigationLink = document.querySelectorAll(".navigation-list a");
+
   navigationLink.forEach((link) => {
     link.addEventListener("click", function () {
-      navigationList.classList.remove("open");
+      navigationList.classList.remove("dropdown-menu");
     });
   });
 
   // Menambahkan tombol "Mode Gelap"
+  const navigationListUL = document.querySelector(".navigation-list ul");
   const themeSwitcherButton = document.createElement("button");
+
   themeSwitcherButton.classList.add("button-theme-switcher");
   themeSwitcherButton.innerText = "Mode Gelap: Mati";
 
   navigationListUL.appendChild(themeSwitcherButton);
 
-  // Membuat event switcher untuk tombol "Mode Gelap"
+  // Membuat tema halaman web & tulisan "Mode Gelap" berubah ketika tombol "Mode Gelap" diklik
   themeSwitcherButton.addEventListener("click", function () {
     document.body.classList.toggle("dark-mode");
 
