@@ -54,6 +54,8 @@ document.addEventListener("DOMContentLoaded", function () {
       : (returnToTopButton.style.display = "none");
   }
 
+  showOrHideReturnToTopButton();
+
   window.addEventListener("scroll", showOrHideReturnToTopButton);
 
   // Menggulirkan halaman ke paling atas ketika tombol "Kembali ke Atas" diklik
